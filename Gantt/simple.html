@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSF Feeder Timeline (Simple)</title>
+  <link rel="stylesheet" href="simple.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page__header">
+      <h1>BSF Chicken Feeder • Timeline</h1>
+      <p class="page__subtitle">High-level look at the path from design to delivery.</p>
+    </header>
+
+    <section class="chart-card">
+      <header class="chart-card__header">
+        <div>
+          <h2>Schedule Overview</h2>
+          <p class="chart-card__description">Each bar represents one task. Length shows duration; position shows timing.</p>
+        </div>
+        <div class="legend">
+          <span class="legend__item legend__item--structure">Structure &amp; Iteration (211)</span>
+          <span class="legend__item legend__item--feeder">Feeder Cup (121)</span>
+          <span class="legend__item legend__item--program">Program Oversight (301)</span>
+        </div>
+      </header>
+      <div class="chart" id="timelineChart"></div>
+      <footer class="chart-card__footer" id="chartSummary"></footer>
+    </section>
+  </main>
+
+  <script src="simple.js" defer></script>
+</body>
+</html>
