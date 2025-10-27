@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feeding System Decision Matrix</title>
+    <link rel="stylesheet" href="matrix.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <p class="eyebrow">Concept Selection</p>
+            <h1>Feeding System Decision Matrix</h1>
+            <p class="lead">A weighted comparison of four poultry feeding approaches using a 1–5 score scale, where 5 represents the most favorable outcome.</p>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="section" aria-labelledby="matrix-title">
+            <div class="container">
+                <div class="intro-panel">
+                    <h2 id="matrix-title">How each concept performs</h2>
+                    <p>Criteria are weighted by importance to the project. Scores are multiplied by their respective weight to yield the weighted total for each concept.</p>
+                </div>
+
+                <div class="matrix-wrapper" role="region" aria-labelledby="matrix-title">
+                    <table class="decision-matrix">
+                        <caption>Weighted comparison of proposed feeding systems</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Criteria</th>
+                                <th scope="col">Do Nothing</th>
+                                <th scope="col">Manual-Collect System</th>
+                                <th scope="col">Auto Dispense System</th>
+                                <th scope="col">Coop-Integrated Trough System</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <span class="criterion-name">Mature Larva Production Rate</span>
+                                    <span class="criterion-weight">Weight 0.35</span>
+                                </th>
+                                <td data-label="Do Nothing">1</td>
+                                <td data-label="Manual-Collect System">3</td>
+                                <td class="is-best" data-label="Auto Dispense System" aria-label="Top score">5</td>
+                                <td data-label="Coop-Integrated Trough System">2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="criterion-name">Scalability</span>
+                                    <span class="criterion-weight">Weight 0.15</span>
+                                </th>
+                                <td data-label="Do Nothing">1</td>
+                                <td data-label="Manual-Collect System">2</td>
+                                <td class="is-best" data-label="Auto Dispense System" aria-label="Top score">5</td>
+                                <td data-label="Coop-Integrated Trough System">3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="criterion-name">Ease of Maintenance &amp; Durability</span>
+                                    <span class="criterion-weight">Weight 0.30</span>
+                                </th>
+                                <td class="is-best" data-label="Do Nothing" aria-label="Top score">5</td>
+                                <td data-label="Manual-Collect System">1</td>
+                                <td data-label="Auto Dispense System">4</td>
+                                <td data-label="Coop-Integrated Trough System">3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <span class="criterion-name">Cost</span>
+                                    <span class="criterion-weight">Weight 0.20</span>
+                                </th>
+                                <td class="is-best" data-label="Do Nothing" aria-label="Top score">5</td>
+                                <td data-label="Manual-Collect System">4</td>
+                                <td data-label="Auto Dispense System">3</td>
+                                <td data-label="Coop-Integrated Trough System">4</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Weighted Total</th>
+                                <td data-label="Do Nothing">3.00</td>
+                                <td data-label="Manual-Collect System">2.45</td>
+                                <td class="is-leader" data-label="Auto Dispense System" aria-label="Highest total">4.30</td>
+                                <td data-label="Coop-Integrated Trough System">2.85</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" aria-live="polite">
+            <div class="container">
+                <div class="summary-grid">
+                    <article class="summary-card">
+                        <h3>Top Recommendation</h3>
+                        <p>The <strong>Auto Dispense System</strong> leads with a weighted score of 4.30, pairing high larva output with strong scalability and long-term reliability.</p>
+                        <ul>
+                            <li>Automation accelerates production consistency.</li>
+                            <li>Requires manageable maintenance relative to its benefits.</li>
+                            <li>Investment cost aligns with projected performance gains.</li>
+                        </ul>
+                    </article>
+
+                    <article class="summary-card">
+                        <h3>Key Observations</h3>
+                        <ul>
+                            <li>Maintaining the status quo fails critical production goals despite minimal cost.</li>
+                            <li>Manual-Collect performs moderately but suffers from poor scalability.</li>
+                            <li>Coop-Integrated Trough excels in affordability yet lags in core performance metrics.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Prepared by Garrick Lee · Spring 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
